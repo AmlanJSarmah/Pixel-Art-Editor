@@ -46,11 +46,14 @@ pencil.addEventListener("click", () => {
   } else {
     option = null;
   }
+
+  // Toggle Pencil
   if (option == "pencil") pencil.style.background = "#000000";
   else pencil.style.background = "#163059";
   if (option == "eraser") eraser.style.background = "#000000";
   else eraser.style.background = "#163059";
 
+  // Make status inactive
   if (state) {
     state = null;
     editorStatus.innerHTML = "InActive";
@@ -65,11 +68,14 @@ eraser.addEventListener("click", () => {
   } else {
     option = null;
   }
+
+  // Toggle Eraser
   if (option == "pencil") pencil.style.background = "#000000";
   else pencil.style.background = "#163059";
   if (option == "eraser") eraser.style.background = "#000000";
   else eraser.style.background = "#163059";
 
+  // Make status inactive
   if (state) {
     state = null;
     editorStatus.innerHTML = "InActive";
