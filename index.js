@@ -7,14 +7,14 @@ let option = null;
 let state = null;
 
 const draw = (e) => {
-  if (option == "pencil" && state === "active")
+  if (option === "pencil" && state === "active")
     e.target.style.background = "#000000";
-  else if (option == "eraser" && state === "active")
+  else if (option === "eraser" && state === "active")
     e.target.style.background = "#FFFFFF";
 };
 
 const changeState = () => {
-  if (state == null) {
+  if (state === null) {
     state = "active";
     editorStatus.innerHTML = "Active";
   } else {
@@ -48,9 +48,9 @@ pencil.addEventListener("click", () => {
   }
 
   // Toggle Pencil
-  if (option == "pencil") pencil.style.background = "#000000";
+  if (option === "pencil") pencil.style.background = "#000000";
   else pencil.style.background = "#163059";
-  if (option == "eraser") eraser.style.background = "#000000";
+  if (option === "eraser") eraser.style.background = "#000000";
   else eraser.style.background = "#163059";
 
   // Make status inactive
@@ -70,9 +70,9 @@ eraser.addEventListener("click", () => {
   }
 
   // Toggle Eraser
-  if (option == "pencil") pencil.style.background = "#000000";
+  if (option === "pencil") pencil.style.background = "#000000";
   else pencil.style.background = "#163059";
-  if (option == "eraser") eraser.style.background = "#000000";
+  if (option === "eraser") eraser.style.background = "#000000";
   else eraser.style.background = "#163059";
 
   // Make status inactive
